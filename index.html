@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Uzbela - Rasmiy sahifa</title>
+
+  <!-- Bootstrap 5 CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fff8ee, #fef6e4);
+      color: #2c2c2c;
+      scroll-behavior: smooth;
+    }
+    .navbar {
+      background-color: #a05d00;
+    }
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+    .nav-link:hover {
+      color: #ffdca9 !important;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://images.unsplash.com/photo-1606813902809-45e75d3f7a0f?fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    }
+    .hero p {
+      font-size: 1.25rem;
+      margin-top: 15px;
+    }
+    .hero .btn {
+      margin-top: 30px;
+      padding: 12px 30px;
+      font-size: 1rem;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+    .hero .btn:hover {
+      background-color: #fff;
+      color: #a05d00;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #a05d00;
+      margin-bottom: 30px;
+    }
+    .card {
+      border: none;
+      border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+    .card i {
+      font-size: 40px;
+    }
+    .social-icons a {
+      font-size: 24px;
+      color: #a05d00;
+      margin: 0 10px;
+      transition: 0.3s;
+    }
+    .social-icons a:hover {
+      color: #ffb347;
+    }
+    footer {
+      background-color: #2c2c2c;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .section-title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand" href="#">Uzbela</a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Biz haqimizda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Xizmatlar</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Aloqa</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Assalomu alaykum!</h1>
+      <p>Uzbela - Yoshlar uchun IT, dizayn va kelajak sari qadam.</p>
+      <a href="#contact" class="btn btn-warning text-dark">Biz bilan bog‘laning</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container py-5 text-center">
+    <h2 class="section-title">Biz haqimizda</h2>
+    <p class="lead">Uzbela – bu O‘zbekistondagi yoshlar uchun mo‘ljallangan IT platforma bo‘lib, dasturlash, dizayn va boshqa texnologiyalar bo‘yicha xizmatlar ko‘rsatamiz. Kelajakni biz bilan birga yarating!</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="container py-5">
+    <h2 class="section-title text-center">Xizmatlarimiz</h2>
+    <div class="row g-4 mt-3">
+      <div class="col-md-4 col-sm-6">
+        <div class="card p-4 text-center shadow-sm h-100">
+          <i class="bi bi-code-slash text-primary"></i>
+          <h5 class="mt-3">Veb Dasturlash</h5>
+          <p>HTML, CSS, JS, Django, React yordamida zamonaviy saytlar yaratamiz.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card p-4 text-center shadow-sm h-100">
+          <i class="bi bi-phone text-success"></i>
+          <h5 class="mt-3">Mobil Ilovalar</h5>
+          <p>Flutter yordamida Android va iOS uchun moslashtirilgan ilovalar yaratamiz.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card p-4 text-center shadow-sm h-100">
+          <i class="bi bi-palette text-danger"></i>
+          <h5 class="mt-3">Grafik Dizayn</h5>
+          <p>Logotip, banner, UI/UX – brending va dizayn xizmatlari.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container py-5 text-center">
+    <h2 class="section-title">Bog‘lanish</h2>
+    <p class="mb-3">Quyidagi platformalar orqali bizga murojaat qiling:</p>
+    <div class="social-icons">
+      <a href="https://t.me/axrorback" target="_blank" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+      <a href="https://instagram.com/uzbelade" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      <a href="mailto:axrorback@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Uzbela. Barcha huquqlar himoyalangan.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
